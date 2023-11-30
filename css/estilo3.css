@@ -4,26 +4,45 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-/* .principal{
-  background-color:#03A9F4;
-  width: 100%;
-  max-width: 1280px;
-  margin: auto; 
-  margin-top: 20px;
- margin-left: 10px;
-
-} */
-.interface{
-  max-width: 1280px;
-   margin: 0 auto; 
-
-}
 body{
   background-color:#0c0c0c;
   height:100vh;
 }
 
+.interface{
+  max-width: 1280px;
+   margin: 0 auto; 
+
+}
+.flex{
+  display: flex;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600px;
+  background-color:#00FF08;
+  border:0;
+  border-radius: 30px;
+  cursor: pointer;
+  transform: .2s;
+
+}
+h2.titulo{
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+h2.titulo span{
+  color: #00FF08;
+}
+ button:hover{
+  box-shadow: 0px 0px 8px #00FF08;
+  transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
 header{
   padding: 40px 4%;
 }
@@ -47,16 +66,6 @@ header nav ul li{
   padding: 0 40px;
 }
 
-/* header{
-  background-color: #BDBDBD;
-  width: 100%;
-  height: 200px;
-  background-image: url(../imagens/programming-web.webp);
-  box-sizing: border-box;
-  padding: 10px;
- margin-left: 10px;
-  
-} */
 
 header > .interface{
   display: flex;
@@ -64,68 +73,134 @@ header > .interface{
   justify-content: space-between;
 
 }
-header .btn-contato button{
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600px;
-  background-color:#00FF08;
-  border:0;
-  border-radius: 30px;
-  cursor: pointer;
-
-}
-header .btn-contato button:hover{
-  box-shadow: 0px 0px 8px #00FF08
-}
-/* nav{
-  background-color:  #BDBDBD;
-  margin-top: 10px;
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  margin-left: 10px;
-  
-} */
-
-/* section{
-  background-color: #BDBDBD;
-  margin-top: 10px;
-  width: 900px;
-  height: 500px;
-  float: left;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: 10px;
-  font-family: 'Roboto', sans-serif;
-} */
-/* aside .card{
-  background-color:  #BDBDBD;
-  width: 322px;
-  margin-top: 10px;
-  height: 500px;
-  float: left;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  
  
-    
-} */
-/* footer{
-  background-color:  #BDBDBD;
-  width: 100%;
-  height: 50px;
-  clear: both;
-  margin-left: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-
-} */
-/* @media screen and (max-width: 400px){
-  aside{
-display: none;  
-}
-section{
-  width: 100%;
+ 
+/* ESTILO DO TOPO DO SITE*/
+section .top-do-site{
+  padding: 40px 4%;
 }
 
+section.top-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.top-do-site h1{
+  color: #fff;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+.top-do-site .txt-topo-site h1 span{
+  color: #00FF08;
+}
+.top-do-site .txt-topo-site p{
+  color: #fff;
+  margin: 40px 0;
+}
+section .img-topo-site img{
+  width: 320px;
+  height: 390px;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 20px;
+  
+  /* Adicione a propriedade background-size */
+  background-size: cover; /* ou background-size: contain; dependendo do efeito desejado */
+
+}
+.top-do-site .img-topo-site img{
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0%{
+    top:0;
+  }
+  100%{
+    top:30px
+  }
+}
+
+
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+  padding: 40px 4%;
+}
+section.especialidades .flex{
+  gap: 60px;
+}
+.especialidades .especialidades-box{
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+
+}
+.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff78;
+
+}
+.especialidades .especialidades-box i{
+  font-size: 70px;
+  color:#00FF08;
+}
+/* .especialidades .especialidades-box p{
+  font-size: 20px;
+  margin: 15px 0;
+  
 } */
+.especialidades .especialidades-box h3{
+  font-size: 28px;
+   margin: 15px 0;
+}
+/* ESTILO SOBRE */
+section .img-sobre img{
+   width: 370px;
+  height: 570px;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 20px;
+  
+  /* Adicione a propriedade background-size */
+  background-size: cover; /* ou background-size: contain; dependendo do efeito desejado */
+
+}
+section.sobre{
+  padding: 80px 4%;
+}
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+.sobre .txt-sobre{
+  color: #fff;
+}
+.sobre .txt-sobre h2{
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+  color:#00FF08;
+  display: block;
+}
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+
+}
+.sobre .txt-sobre .btn-social button{
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00FF08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+}
