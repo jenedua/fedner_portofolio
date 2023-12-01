@@ -37,7 +37,7 @@ h2.titulo{
 h2.titulo span{
   color: #00FF08;
 }
- button:hover{
+ button:hover, form .btn-enviar input:hover{
   box-shadow: 0px 0px 8px #00FF08;
   transform: scale(1.05);
 }
@@ -72,6 +72,16 @@ header > .interface{
   align-items: center;
   justify-content: space-between;
 
+}
+.btn-social button{
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00FF08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
 }
  
  
@@ -122,7 +132,17 @@ section .img-topo-site img{
     top:30px
   }
 }
-
+.logo{
+   max-width: 100px;
+    
+}
+header .sua-imagem{
+  width: 150%;
+  height: auto;
+  background-color: #434141;
+   background-size: cover;
+   border-radius: 20px;
+}
 
 
 /* ESTILO ESPECIALIDADES */
@@ -175,7 +195,7 @@ section.sobre{
 }
 section.sobre .flex{
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 }
 .sobre .txt-sobre{
   color: #fff;
@@ -194,13 +214,127 @@ section.sobre .flex{
   text-align: justify;
 
 }
-.sobre .txt-sobre .btn-social button{
-  width:60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  background-color: #00FF08;
-  font-size: 22px;
+ 
+/* ESTILO PORTFÓLIO */
+section.portofolio{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+ 
+   
+}
+section.portofolio .flex{
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.img-port{
+  width: 240px;
+  height: 350px;
+  float: left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: 8s;
   cursor: pointer;
-  margin: 0 5px;
+  border-radius: 40px;
+  position: relative;
+}
+.img-port:hover{
+   background-position: 100% 100%;
+
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#0809089d;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:24px;
+  font-weight:600;
+  color: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+.overlay:hover{
+  opacity: 1
+}
+/* ESTILO FORMULARIO */
+section.formulario{
+  padding:80px 4%
+}
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+form input, form textarea{
+  width: 100%;
+  background-color: #434141;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+form textarea{
+  resize: none;
+  max-height: 200px;
+}
+form .btn-enviar{
+  margin-top: 20px;
+  text-align: center;
+}
+form .btn-enviar input{
+  width: 120px;
+  height: 50px;
+  background-color: #00FF08;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+  text-align: center;
+
+}
+/* ESTILO FOOTER */
+
+footer{
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+footer .flex{
+  justify-content: space-between;
+}
+ footer .logo-footer{
+  max-width: 100px;
+}
+footer .line-footer{
+  padding: 20px 0;
+}
+footer .line-footer p i{
+  color:#00FF08;
+  font-size: 22px;
+}
+.borda{
+  border-top: 2px solid #00FF08;
+}
+footer .line-footer p a{
+  color: #fff
+}
+ footer .sua-imagem{
+  width: 150%;
+  height: auto;
+  background-color: #434141;
+   border-radius: 20px;
+   object-fit: cover;
 }
