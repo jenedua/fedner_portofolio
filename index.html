@@ -43,10 +43,10 @@
         <nav class="menu-desktop">
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Especialidades</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <!-- <li><a href="#contato">Contato</a></li> -->
           </ul>
         </nav>
 
@@ -55,7 +55,7 @@
         </div>
 
         <div class="btn-contato">
-          <a href="#">
+          <a href="#contato">
             <button>Contato</button>
           </a>
         </div>
@@ -67,9 +67,10 @@
           <nav>
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Especialidades</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">contato</a></li>
           </ul>
         </nav>
         </div>
@@ -91,7 +92,7 @@
               </p>
 
               <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                   <button>Entre em contato</button>
                 </a>
               </div>
@@ -104,7 +105,7 @@
         </div>
       </section>
 
-      <section class="especialidades">
+      <section class="especialidades" id="especialidades">
         <div class="interface">
           <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
           <div class="flex">
@@ -139,7 +140,7 @@
         </div>
       </section>
 
-      <section class="sobre">
+      <section class="sobre" id="sobre">
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
@@ -195,7 +196,7 @@
           </div>
         </div>
       </section>
-      <section class="portofolio">
+      <section class="portofolio" id="projetos">
         <div class="interface">
           <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
           <div class="flex">
@@ -203,38 +204,38 @@
               class="img-port"
               style="background-image: url(imagens/php.jpg)"
             >
-              <div class="overlay">Ir para repositorio</div>
+              <div class="overlay"><a href="https://github.com/jenedua/Portofolio_Fedner_Dev" target="_blank">Ir para repositorio</a></div>
             </div>
             <div
               class="img-port"
-              style="background-image: url(imagens/postgresql.jpg)"
+              style="background-image: url(imagens/guia-js.png)"
             >
-              <div class="overlay">Ir para repositorio</div>
+              <div class="overlay"><a href="https://github.com/jenedua/HDCEVENTS/tree/master" target="_blank">Ir para repositorio</a></div>
             </div>
             <div
               class="img-port"
               style="background-image: url(imagens/react.webp)"
             >
-              <div class="overlay">Ir para repositorio</div>
+              <div class="overlay"><a href="https://github.com/jenedua/fedner-store" target="_blank">Ir para repositorio</a></div>
             </div>
             <div
               class="img-port"
               style="background-image: url(imagens/typescript.webp)"
             >
-              <div class="overlay">Ir para repositorio</div>
+              <div class="overlay"><a href="https://github.com/jenedua/decorators-typescript/tree/master" target="_blank">Ir para repositorio</a></div>
             </div>
             <div
               class="img-port"
               style="background-image: url(imagens/nodejs-256.png)"
             >
-              <div class="overlay">Ir para repositorio</div>
+              <div class="overlay"> <a href="https://github.com/jenedua/vue-router-e-axios" target="_blank">Ir para repositorio</a></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="formulario">
-        <div class="interface">
+      <section class="formulario" >
+        <div class="interface" id="contato">
           <h2 class="titulo">FALA<span>COMIGO.</span></h2>
           <form action="">
             <input

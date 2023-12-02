@@ -311,6 +311,10 @@ section.portofolio .flex {
   opacity: 0;
   transition: 0.5s;
 }
+.overlay a{
+  text-decoration: none;
+  color:#fff
+}
 .overlay:hover {
   opacity: 1;
 }
