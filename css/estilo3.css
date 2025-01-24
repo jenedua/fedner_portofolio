@@ -241,6 +241,8 @@ section .img-sobre img {
   background-repeat: no-repeat;
   border: 0;
   border-radius: 20px;
+  background-size: cover;
+  background-position: center center;
 
   /* Adicione a propriedade background-size */
   background-size: cover; /* ou background-size: contain; dependendo do efeito desejado */
